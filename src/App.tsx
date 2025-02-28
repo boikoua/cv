@@ -1,7 +1,12 @@
-import styles from './App.scss';
+// import styles from './App.scss';
+import Header from './assets/components/Header';
 
 const App = () => {
-  return <h1>Hello</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default App;
