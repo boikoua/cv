@@ -8,7 +8,7 @@ const About = () => {
         <div className={styles.wrapper}>
           <p className={styles.greeting}>Hi! I'm Dmytro Boiko</p>
 
-          <img className={styles.avatar} src="./avatar.png" alt="Avatar" />
+          <img className={styles.avatar} src="./img/avatar.png" alt="Avatar" />
 
           <h1 className={styles.title}>Frontend Developer</h1>
           <p className={styles.text}>
