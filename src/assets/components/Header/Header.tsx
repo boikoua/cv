@@ -1,36 +1,32 @@
+import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 
 const Header = () => {
   return (
-    <>
-      <header className={styles.header}>
-        <div className="container">
-          <div className={styles.wrapper}>
-            <span className={styles.logo}>&lt;DmytroBoiko /&gt;</span>
+    <header className={styles.header}>
+      <div className="container">
+        <div className={styles.wrapper}>
+          <div className={styles.logo}>&lt;DmitryBoiko/&gt;</div>
 
-            <nav className={styles.nav}>
-              <ul className={styles.items}>
-                <li className={styles.item}>
-                  <a className={styles.link} href="#skills">
-                    Skills
-                  </a>
-                </li>
-                <li className={styles.item}>
-                  <a className={styles.link} href="projects">
-                    Projects
-                  </a>
-                </li>
-                <li className={styles.item}>
-                  <a className={styles.link} href="contacts">
-                    Contacts
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <nav className={styles.nav}>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/skills">Skills</Link>
+              </li>
+              <li>
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li>
+                <Link to="/contacts">Contacts</Link>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </header>
-    </>
+      </div>
+    </header>
   );
 };
 
