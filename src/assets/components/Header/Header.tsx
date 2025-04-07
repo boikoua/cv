@@ -6,7 +6,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className="container">
         <div className={styles.wrapper}>
-          <div className={styles.logo}>&lt;DmitryBoiko/&gt;</div>
+          <div className={styles.logo}>&lt;DmytroBoiko/&gt;</div>
 
           <nav className={styles.nav}>
             <ul>
