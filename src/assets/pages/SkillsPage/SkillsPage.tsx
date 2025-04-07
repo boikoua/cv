@@ -26,7 +26,7 @@ const SkillsPage = () => {
   const tools = skills.filter((item) => item.category === 'tools');
 
   return (
-    <section className={styles.skills}>
+    <section>
       <div className="container">
         <div className={styles.wrapper}>
           <img className={styles.avatar} src="img/skills.png" alt="My avatar" />

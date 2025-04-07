@@ -2,7 +2,7 @@ import styles from './HomePage.module.scss';
 
 const HomePage = () => {
   return (
-    <section className={styles.home}>
+    <section>
       <div className="container">
         <div className={styles.wrapper}>
           <img className={styles.avatar} src="img/avatar.png" alt="My avatar" />
