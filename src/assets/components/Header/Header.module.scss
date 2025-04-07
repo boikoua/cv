@@ -1,4 +1,84 @@
+.header {
+  padding-block: 32px;
+}
+
 .wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #a46ef5, #e889b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav {
+  display: block;
+
+  & ul {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.link {
+  position: relative;
+  font-size: 26px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #a46ef5, #e889b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: linear-gradient(90deg, #a46ef5, #e889b2);
+    transition: all 0.3s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.active::after {
+  width: 100%;
+}
+
+.burger {
+  display: none;
+  font-size: 28px;
+  background: linear-gradient(90deg, #a46ef5, #e889b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding-block: 20px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
 }

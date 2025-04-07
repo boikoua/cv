@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Header.module.scss';
 
 const Header = () => {
@@ -11,19 +11,49 @@ const Header = () => {
           <nav className={styles.nav}>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? `${styles.link} ${styles.active}` : styles.link
+                  }
+                  to="/"
+                >
+                  Home
+                </NavLink>
               </li>
               <li>
-                <Link to="/skills">Skills</Link>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? `${styles.link} ${styles.active}` : styles.link
+                  }
+                  to="/skills"
+                >
+                  Skills
+                </NavLink>
               </li>
               <li>
-                <Link to="/projects">Projects</Link>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? `${styles.link} ${styles.active}` : styles.link
+                  }
+                  to="/projects"
+                >
+                  Projects
+                </NavLink>
               </li>
               <li>
-                <Link to="/contacts">Contacts</Link>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? `${styles.link} ${styles.active}` : styles.link
+                  }
+                  to="/contacts"
+                >
+                  Contacts
+                </NavLink>
               </li>
             </ul>
           </nav>
+
+          <span className={`icon-burger ${styles.burger}`}></span>
         </div>
       </div>
     </header>
