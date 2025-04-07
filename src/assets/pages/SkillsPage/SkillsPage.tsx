@@ -29,20 +29,41 @@ const SkillsPage = () => {
     <section>
       <div className="container">
         <div className={styles.wrapper}>
-          <img className={styles.avatar} src="img/skills.png" alt="My avatar" />
+          <img
+            className={styles.avatar}
+            src="img/skills.png"
+            alt="My avatar"
+            data-aos="zoom-in"
+          />
 
           <div className={styles.content}>
-            <h3 className={styles.subtitle}>Languages</h3>
-            <ul className={styles.items}>{show(languages)}</ul>
+            <h3 className={styles.subtitle} data-aos="fade-right">
+              Languages
+            </h3>
+            <ul className={styles.items} data-aos="fade-left">
+              {show(languages)}
+            </ul>
 
-            <h3 className={styles.subtitle}>Frameworks</h3>
-            <ul className={styles.items}>{show(frameworks)}</ul>
+            <h3 className={styles.subtitle} data-aos="fade-right">
+              Frameworks
+            </h3>
+            <ul className={styles.items} data-aos="fade-left">
+              {show(frameworks)}
+            </ul>
 
-            <h3 className={styles.subtitle}>CSS Frameworks</h3>
-            <ul className={styles.items}>{show(CSSFrameworks)}</ul>
+            <h3 className={styles.subtitle} data-aos="fade-right">
+              CSS Frameworks
+            </h3>
+            <ul className={styles.items} data-aos="fade-left">
+              {show(CSSFrameworks)}
+            </ul>
 
-            <h3 className={styles.subtitle}>Tools</h3>
-            <ul className={styles.items}>{show(tools)}</ul>
+            <h3 className={styles.subtitle} data-aos="fade-right">
+              Tools
+            </h3>
+            <ul className={styles.items} data-aos="fade-left">
+              {show(tools)}
+            </ul>
           </div>
         </div>
       </div>

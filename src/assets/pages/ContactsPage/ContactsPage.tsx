@@ -9,9 +9,10 @@ const ContactsPage = () => {
             className={styles.avatar}
             src="img/contacts.png"
             alt="My avatar"
+            data-aos="zoom-in"
           />
 
-          <div className={styles.content}>
+          <div className={styles.content} data-aos="fade-up-left">
             <ul>
               <li>
                 <img src="img/icons/contacts/phone.svg" alt="Phone" />

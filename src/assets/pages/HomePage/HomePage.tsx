@@ -5,12 +5,17 @@ const HomePage = () => {
     <section>
       <div className="container">
         <div className={styles.wrapper}>
-          <img className={styles.avatar} src="img/avatar.png" alt="My avatar" />
+          <img
+            className={styles.avatar}
+            src="img/avatar.png"
+            alt="My avatar"
+            data-aos="zoom-in"
+          />
 
           <div className={styles.content}>
             <h2>Hi! My name's Dmytro Boiko</h2>
 
-            <h1>I'm Front-end Developer</h1>
+            <h1 data-aos="zoom-in-left">I'm Front-end Developer</h1>
 
             <p>
               My goal is to develop fast, intuitive, and aesthetically pleasing
@@ -19,7 +24,7 @@ const HomePage = () => {
               follow best development practices, and strive for clean,
               maintainable code. I am always open to new technologies and
               constantly improving my skills to create high-quality web
-              solutions. 🚀
+              solutions. <span data-aos="fade-up">🚀</span>
             </p>
 
             <a
