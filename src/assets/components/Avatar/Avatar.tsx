@@ -9,7 +9,7 @@ const Avatar: React.FC<Props> = ({ title }) => {
   return (
     <img
       className={styles.avatar}
-      src={`img/${title}.png`}
+      src={`./img/${title}.png`}
       alt="My avatar"
       data-aos="zoom-in"
     />
