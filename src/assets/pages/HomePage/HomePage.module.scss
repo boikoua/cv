@@ -4,10 +4,6 @@
   gap: 30px;
 }
 
-.avatar {
-  width: 400px;
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -52,10 +48,6 @@
     gap: 20px;
   }
 
-  .avatar {
-    width: 350px;
-  }
-
   .content {
     & h2 {
       font-size: 40px;
@@ -84,10 +76,6 @@
   .wrapper {
     flex-direction: column;
     gap: 20px;
-  }
-
-  .avatar {
-    width: 300px;
   }
 
   .content {

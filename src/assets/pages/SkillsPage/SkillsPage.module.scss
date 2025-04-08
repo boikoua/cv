@@ -4,10 +4,6 @@
   justify-content: space-between;
 }
 
-.avatar {
-  width: 400px;
-}
-
 .subtitle {
   margin-bottom: 20px;
   text-align: center;
@@ -35,10 +31,6 @@
 }
 
 @media (max-width: 1024px) {
-  .avatar {
-    width: 350px;
-  }
-
   .subtitle {
     margin-bottom: 20px;
     text-align: center;
@@ -67,10 +59,6 @@
   .wrapper {
     flex-direction: column;
     gap: 20px;
-  }
-
-  .avatar {
-    width: 300px;
   }
 
   .subtitle {

@@ -1,4 +1,5 @@
 import { skills } from '../../api/skills';
+import Avatar from '../../components/Avatar';
 import { ISkill } from '../../types/ISkill';
 import styles from './SkillsPage.module.scss';
 
@@ -29,12 +30,7 @@ const SkillsPage = () => {
     <section>
       <div className="container">
         <div className={styles.wrapper}>
-          <img
-            className={styles.avatar}
-            src="img/skills.png"
-            alt="My avatar"
-            data-aos="zoom-in"
-          />
+          <Avatar title="skills" />
 
           <div className={styles.content}>
             <h3 className={styles.subtitle} data-aos="fade-right">

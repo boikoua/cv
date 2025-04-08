@@ -1,3 +1,4 @@
+import Avatar from '../../components/Avatar';
 import styles from './ContactsPage.module.scss';
 
 const ContactsPage = () => {
@@ -5,12 +6,7 @@ const ContactsPage = () => {
     <section>
       <div className="container">
         <div className={styles.wrapper}>
-          <img
-            className={styles.avatar}
-            src="img/contacts.png"
-            alt="My avatar"
-            data-aos="zoom-in"
-          />
+          <Avatar title="contacts" />
 
           <div className={styles.content} data-aos="fade-up-left">
             <ul>

@@ -1,3 +1,4 @@
+import Avatar from '../../components/Avatar';
 import styles from './HomePage.module.scss';
 
 const HomePage = () => {
@@ -5,12 +6,7 @@ const HomePage = () => {
     <section>
       <div className="container">
         <div className={styles.wrapper}>
-          <img
-            className={styles.avatar}
-            src="img/avatar.png"
-            alt="My avatar"
-            data-aos="zoom-in"
-          />
+          <Avatar title="avatar" />
 
           <div className={styles.content}>
             <h2>Hi! My name's Dmytro Boiko</h2>
