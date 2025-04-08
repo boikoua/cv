@@ -1,0 +1,41 @@
+.burger {
+}
+
+.top {
+  display: flex;
+  justify-content: end;
+  padding-block: 32px;
+}
+
+.close {
+  font-size: 32px;
+  background: linear-gradient(90deg, #a46ef5, #e889b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.nav {
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  & a {
+    font-size: 32px;
+  }
+}
+
+.avatar {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  height: 300px;
+}
+
+@media (max-width: 425px) {
+  .top {
+    padding-block: 20px;
+  }
+}

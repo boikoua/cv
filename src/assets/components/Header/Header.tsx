@@ -1,7 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Header.module.scss';
+import React from 'react';
 
-const Header = () => {
+type Props = {
+  isOpen: boolean;
+  setIsOpen: (val: boolean) => void;
+};
+
+const Header: React.FC<Props> = ({ isOpen, setIsOpen }) => {
   return (
     <header className={styles.header}>
       <div className="container">
@@ -53,7 +59,10 @@ const Header = () => {
             </ul>
           </nav>
 
-          <span className={`icon-burger ${styles.burger}`}></span>
+          <span
+            onClick={() => setIsOpen(true)}
+            className={`icon-burger ${styles.burger}`}
+          ></span>
         </div>
       </div>
     </header>

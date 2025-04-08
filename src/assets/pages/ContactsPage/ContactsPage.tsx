@@ -20,17 +20,24 @@ const ContactsPage = () => {
               </li>
               <li>
                 <img src="img/icons/contacts/telegram.svg" alt="Telegram" />
-                <a href="https://t.me/boiko_dmitry">Telegram</a>
+                <a target="_blank" href="https://t.me/boiko_dmitry">
+                  Telegram
+                </a>
               </li>
               <li>
                 <img src="img/icons/contacts/linkedin.svg" alt="LinkedIn" />
-                <a href="https://www.linkedin.com/in/dmytro-boiko-18376b334/">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/dmytro-boiko-18376b334/"
+                >
                   LinkedIn
                 </a>
               </li>
               <li>
                 <img src="img/icons/contacts/github.svg" alt="GitHub" />
-                <a href="https://github.com/boikoua">GitHub</a>
+                <a target="_blank" href="https://github.com/boikoua">
+                  GitHub
+                </a>
               </li>
             </ul>
           </div>

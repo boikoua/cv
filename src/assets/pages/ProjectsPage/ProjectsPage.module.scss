@@ -8,11 +8,12 @@
 .projects {
   position: relative;
   width: 100%;
+  padding-bottom: 40px;
 }
 
 .controls {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 10px;
   right: 10px;
   z-index: 1;
@@ -60,13 +61,9 @@
 
 :global(.custom-pagination) {
   position: absolute;
-  bottom: -10px;
+  bottom: 10px;
   z-index: 1;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: nowrap;
   overflow-x: auto;
   padding: 10px 0;
   max-width: 100%;
